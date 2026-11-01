@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>PUP Portal</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- 1 Splash -->
+<section id="splash" class="screen hero on"><div id="sealBig"></div></section>
+
+<!-- 2 PUP title -->
+<section id="title" class="screen hero"><h1 id="pup">PUP</h1></section>
+
+<!-- 3 Role select -->
+<section id="roles" class="screen hero">
+ <div class="stack">
+  <div class="sealSlot"></div>
+  <button class="btn" data-role="Student">Student</button>
+  <button class="btn" data-role="Faculty">Faculty</button>
+  <button class="btn" data-role="Admin">Admin</button>
+ </div>
+</section>
+
+<!-- 4 Login -->
+<section id="login" class="screen hero">
+ <div class="stack">
+  <div class="sealSlot"></div>
+  <small id="signAs">You are signing in as Student</small>
+  <input class="field" id="idn" placeholder="ID Number" autocomplete="username" inputmode="numeric">
+  <input class="field" id="pw" type="password" placeholder="Password" autocomplete="current-password">
+  <p class="err" id="err" role="alert"></p>
+  <button class="btn" id="signin">Sign in</button>
+  <button class="link" id="forgot">Forgot password</button>
+  <button class="link" id="back">Choose a different role</button>
+</div>
+
+<footer class="info">
+ <h2>Before you sign in</h2>
+ <p>This website is created to be an example of the project that we want to create</p>
+ <p><strong>Forgot your password?</strong> Sign in using a random name and random password <a href="example.helpdesk@yourschool.edu.ph">helpdesk@yourschool.edu.ph</a>.</p>
+ <p class="fine">Any character mentioned in this website is only fictional</p>
+</footer>
+</section>
+
+<!-- 5 Portal -->
+<section id="portal" class="screen">
+ <aside id="side" aria-label="Sidebar"></aside>
+ <div id="main">
+  <div id="top">
+   <button id="burger" aria-label="Toggle sidebar">☰</button>
+   <nav id="nav"></nav>
+   <div id="avatar" title="Profile">👩🏻</div>
+  </div>
+  <div id="view"></div>
+ </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
